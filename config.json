@@ -49,7 +49,7 @@
     },
     {
       "tag": "api",
-      "port": 49308,
+      "port": 49372,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -66,8 +66,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "v1b1.toddns.ml",
-            "port": 80,
+            "address": "v101a.toddns.gq",
+            "port": 443,
             "users": [
               {
                 "id": "2b6813ab-12c6-304e-9d55-640f7c6070c9",
@@ -81,8 +81,12 @@
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false
+        },
         "wsSettings": {
-          "path": "/a11-xxxBnloadPy"
+          "path": "/frfr-v101NxyPy"
         }
       },
       "mux": {
