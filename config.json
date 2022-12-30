@@ -49,7 +49,7 @@
     },
     {
       "tag": "api",
-      "port": 49372,
+      "port": 49941,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -66,7 +66,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "v101a.toddns.gq",
+            "address": "v116.toddns.gq",
             "port": 443,
             "users": [
               {
@@ -86,7 +86,7 @@
           "allowInsecure": false
         },
         "wsSettings": {
-          "path": "/frfr-v101NxyPy"
+          "path": "/v116-kDPxxx6Otf"
         }
       },
       "mux": {
