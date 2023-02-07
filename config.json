@@ -49,7 +49,7 @@
     },
     {
       "tag": "api",
-      "port": 49189,
+      "port": 49173,
       "listen": "127.0.0.1",
       "protocol": "dokodemo-door",
       "settings": {
@@ -66,7 +66,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "v118.toddns.gq",
+            "address": "v103a.toddns.gq",
             "port": 443,
             "users": [
               {
@@ -83,10 +83,10 @@
         "network": "ws",
         "security": "tls",
         "tlsSettings": {
-          "allowInsecure": false
+          "allowInsecure": true
         },
         "wsSettings": {
-          "path": "/v118-fcc20235"
+          "path": "/v103-upgr2023nay"
         }
       },
       "mux": {
@@ -130,11 +130,18 @@
       },
       {
         "type": "field",
-        "outboundTag": "proxy",
+        "outboundTag": "direct",
         "domain": [
-          "geosite:google",
-          "domain:v2free.org",
-          "tiktok"
+          "domain:example-example.com",
+          "domain:example-example2.com"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all"
         ],
         "enabled": true
       },
@@ -153,6 +160,12 @@
           "geoip:private",
           "geoip:cn"
         ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "proxy",
         "enabled": true
       }
     ]
