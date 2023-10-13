@@ -3,7 +3,7 @@ allow-lan: true
 tcp-concurrent: true
 mode: rule
 log-level: info
-# ipv6: false
+ipv6: false
 dns:
 enable: true
 default-nameserver:
