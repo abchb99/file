@@ -22,10 +22,10 @@ proxies:
   - name: Warp1
     type: hysteria2
     server: 108.181.22.155
-    port: 17965
+    port: 46728
     up: "900 Mbps"
     down: "900 Mbps"
-    password: 4f58555f
+    password: dongtaiwang.com
     sni: www.bing.com
     skip-cert-verify: true
 
