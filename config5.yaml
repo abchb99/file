@@ -1,6 +1,4 @@
 ﻿mixed-port: 7890
-allow-lan: true
-tcp-concurrent: true
 mode: rule
 log-level: info
 ipv6: true
@@ -11,9 +9,10 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: false
-  nameserver:
+  default-nameserver: 
     - 223.5.5.5
-    - 114.114.115.115
+  nameserver:
+    - tls://dns.opendns.com:853
   proxy-server-nameserver:
     - 208.67.220.220
     - 223.5.5.5
