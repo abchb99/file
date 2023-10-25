@@ -19,13 +19,13 @@ dns:
 
 proxies:
   - name: Warp1
-    type: hysteria2
-    server: 167.160.90.252
-    port: 60930
+    type: hysteria
+    server: 173.234.25.52
+    port: 20164
     up: "900 Mbps"
     down: "900 Mbps"
-    password: fc4488ef
-    sni: www.bing.com
+    auth_str: Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F
+    sni: www.microsoft.com
     skip-cert-verify: true
 
 rules:
