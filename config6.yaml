@@ -22,6 +22,7 @@ proxies:
     type: hysteria
     server: 173.234.25.52
     port: 20164
+    protocol: udp
     up: "900 Mbps"
     down: "900 Mbps"
     auth_str: Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F
