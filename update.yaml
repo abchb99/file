@@ -42,7 +42,7 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-         path: "/tr?ed2049"
+         path: "/tr?ed=2049"
          headers:
             Host: microstation.deeptang.repl.co
 
@@ -64,21 +64,9 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-         path: "/3690dc09-26c3-57ab-b9cf-836523956698?ed2048"
+         path: "/3690dc09-26c3-57ab-b9cf-836523956698?ed=2048"
          headers:
             Host: us2t.eurodns.tk
-
-  - name: p6
-    type: wireguard
-    server: 188.114.98.73
-    port: 891
-    ip: 172.16.0.2
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    private-key: oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=
-    mtu: 1280
-    udp: true
-    remote-dns-resolve: true
-    dns: [ 1.1.1.1, 8.8.8.8 ]
 
   - {"name": "p5",
     "type": "tuic",
@@ -94,6 +82,18 @@ proxies:
     "udp-relay-mode": "native",
     "reduce-rtt": true
     }
+
+  - name: p6
+    type: wireguard
+    server: 188.114.98.73
+    port: 891
+    ip: 172.16.0.2
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    private-key: oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=
+    mtu: 1280
+    udp: true
+    remote-dns-resolve: true
+    dns: [ 1.1.1.1, 8.8.8.8 ]
 
 rules:
   - GEOSITE,gfw,p1
