@@ -48,7 +48,7 @@ proxies:
 
   - name: p3
     type: ss
-    server: 43.207.83.224
+    server: zrpfgo.ssplane.cn
     port: 18629
     cipher: chacha20-ietf-poly1305
     password: 7876aa0c-8408-4231-ba34-acb981a9a64a
