@@ -33,7 +33,6 @@ proxies:
   - {"name":"meta_hysteria_71","type":"hysteria","server":"www.dtku50.xyz","port":14751,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY","up":600,"down":900}
   - {"name":"SG","type":"vmess","server":"zxpfgo.ssplane.cn","port":28038,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"卢森","type":"vmess","server":"freeyx.cloudflare88.eu.org","port":80,"cipher":"auto","uuid":"08b2ceb1-5917-42da-b02c-0f942754aac6","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"buyvm.iiio.wiki"}}}
-  - {"name":"sash","type":"vless","server":"51.81.201.204","port":31970,"uuid":"aed17d1b-a498-4d0b-8298-5580c495ceb3","tls":false,"servername":"internet.life.com.by","network":"tcp"}
   - {"name":"hy2","type":"hysteria2","server":"103.245.237.90","port":4433,"password":"sharecentrepro","sni":"vn.sharecentre.online","skip-cert-verify":true,"up":600,"down":900}
 
 proxy-groups:
@@ -57,7 +56,6 @@ proxy-groups:
       - meta_hysteria_71
       - SG
       - 卢森
-      - sash
 
 rules:
   - GEOSITE,gfw,代理
