@@ -34,6 +34,18 @@ proxies:
   - {"name":"SG","type":"vmess","server":"zxpfgo.ssplane.cn","port":28038,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"卢森","type":"vmess","server":"freeyx.cloudflare88.eu.org","port":80,"cipher":"auto","uuid":"08b2ceb1-5917-42da-b02c-0f942754aac6","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"buyvm.iiio.wiki"}}}
   - {"name":"hy2","type":"hysteria2","server":"103.245.237.90","port":4433,"password":"sharecentrepro","sni":"vn.sharecentre.online","skip-cert-verify":true,"up":600,"down":900}
+  - name: WARP
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 2408
+    ip: 172.16.0.2
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    private-key: oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=
+    mtu: 1280
+    udp: true
+    remote-dns-resolve: true
+    dns: [ 1.1.1.1, 8.8.8.8 ]
+    dialer-proxy: SGGOOGLE
 
 proxy-groups:
   - name: 代理
@@ -50,7 +62,7 @@ proxy-groups:
       - defaultName_1
       - ip1
       - Hys1-6
-      - SGGOOGLE
+      - WARP
       - reality_3_alvin
       - dtg2.com
       - meta_hysteria_71
