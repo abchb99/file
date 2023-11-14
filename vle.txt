@@ -1,3 +1,0 @@
-﻿sn://vmess?eNpjYGBgMDXUszDUMzIA4S2PahgYliamphiapxgm6SaaWFromqQYJOlaGAFZpqYWBskmlqbJqUnGiaUl7_8DQUZJyYfMvJLUorzUEr2czLRUveT8XL2kn415-XlPgaYzMAJxY2MjAK2lI1k
-vless://aed17d1b-a498-4d0b-8298-5580c495ceb3@51.81.201.204:31970/?encryption=none&host=internet.life.com.by&type=tcp&headerType=http
-{"name":"sash","type":"vless","server":"51.81.201.204","port":31970,"uuid":"aed17d1b-a498-4d0b-8298-5580c495ceb3","servername":"internet.life.com.by","network":"tcp"}
