@@ -32,8 +32,6 @@ proxies:
   - {"name":"dtg2.com","type":"vless","server":"23.227.38.109","port":443,"uuid":"f5c180eb-fbce-49ac-9029-482eca9385c0","tls":true,"servername":"xray1.freeh1.xyz","network":"ws","ws-opts":{"path":"/gzogws?ed=2048","headers":{"host":"xray1.freeh1.xyz"}},"client-fingerprint":"chrome"}
   - {"name":"meta_hysteria_71","type":"hysteria","server":"www.dtku50.xyz","port":14751,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY","up":600,"down":900}
   - {"name":"SG","type":"vmess","server":"zxpfgo.ssplane.cn","port":28038,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"卢森","type":"vmess","server":"freeyx.cloudflare88.eu.org","port":80,"cipher":"auto","uuid":"08b2ceb1-5917-42da-b02c-0f942754aac6","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aries?ed=2048","headers":{"host":"buyvm.iiio.wiki"}}}
-  - {"name":"hy2","type":"hysteria2","server":"103.245.237.90","port":4433,"password":"sharecentrepro","sni":"vn.sharecentre.online","skip-cert-verify":true,"up":600,"down":900}
   - name: WARP
     type: wireguard
     server: engage.cloudflareclient.com
@@ -55,7 +53,6 @@ proxy-groups:
     tolerance: 150
     proxies:
       - jump
-      - hy2
       - p4
       - rep
       - defaultName_2
@@ -67,15 +64,16 @@ proxy-groups:
       - dtg2.com
       - meta_hysteria_71
       - SG
-      - 卢森
 
 rules:
   - GEOSITE,gfw,代理
   - DOMAIN-KEYWORD,tiandix,代理
   - DOMAIN-KEYWORD,gongyi,代理
+  - DOMAIN-KEYWORD,shenyun,代理
+  - DOMAIN-KEYWORD,falun,代理
+  - DOMAIN-KEYWORD,minghui,代理
+  - DOMAIN-KEYWORD,ganjing,代理
   - GEOIP,private,DIRECT
-  - GEOIP,CLOUDFRONT,DIRECT
-  - GEOIP,FASTLY,DIRECT
   - GEOIP,CN,DIRECT
   - IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
   - IP-CIDR,63.92.224.0/19,DIRECT,no-resolve
