@@ -74,8 +74,6 @@ rules:
   - DOMAIN-KEYWORD,tiandix,代理
   - DOMAIN-KEYWORD,gongyi,代理
   - GEOIP,private,DIRECT
-  - GEOIP,CLOUDFRONT,DIRECT
-  - GEOIP,FASTLY,DIRECT
   - GEOIP,CN,DIRECT
   - IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
   - IP-CIDR,63.92.224.0/19,DIRECT,no-resolve
