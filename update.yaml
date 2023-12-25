@@ -21,13 +21,27 @@ dns:
 
 proxies:
   - {"name":"jump","type":"vmess","server":"127.0.0.1","port":333,"cipher":"auto","uuid":"94242109-0930-427f-f899-15d34021130c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu.org"}}}
-  - {"name":"SG","type":"vmess","server":"cmss.zzcloud.top","port":28038,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"defaultName_1", "type": "tuic","server":"108.181.22.205","port":50987,"password":"dongtaiwang","uuid":"d6214437-e1b5-4334-9090-8f66b78bea89","disable_sni": false, "sni":"bing.com","alpn":["h3"],"skip-cert-verify": true, "udp-relay-mode":"native","congestion_control":"bbr", "reduce-rtt": true }
-  - {"name":"defaultName_2", "type": "tuic","server":"108.181.24.7","port":23450,"password":"dongtaiwang","uuid":"3618921b-adeb-4bd3-a2a0-f98b72a674b1","disable_sni": false,"sni":"bing.com","alpn":["h3"],"skip-cert-verify": true, "udp-relay-mode":"native","congestion_control":"bbr", "reduce-rtt": true }
+  - {"name":"jp","type":"vmess","server":"c3861be1ab1f63d2.cdn.jiashule.com","port":18629,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"SG","type":"vmess","server":"153d5e8359f1b2a9.cdn.jiashule.com","port":28038,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"Hys1-6","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":600,"down":900}
   - {"name":"rep","type":"trojan","server":"35.186.245.55","port":443,"udp":true,"password":"a5f12cce-f3a1-4818-900c-e3f374a1df5d","sni":"Microstation.Deeptang.repl.co","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tr?ed=2048","headers":{"host":"Microstation.Deeptang.repl.co"}}}
-  - {"name":"reality_3_alvin","type":"vless","server":"109.104.152.156","port":16717,"udp":true,"uuid":"a2971a3e-d013-47b2-93c8-2ff2a4bcff2a","tls":true,"servername":"aod.itunes.apple.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"ydGuypY0EPIAxMpi8L-yhWBtjyavZbtwo9JJk2K5G0Y","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"dtg2","type":"vless","server":"23.227.38.109","port":443,"uuid":"f5c180eb-fbce-49ac-9029-482eca9385c0","tls":true,"servername":"xray1.freeh1.xyz","network":"ws","ws-opts":{"path":"/gzogws?ed=2048","headers":{"host":"xray1.freeh1.xyz"}},"client-fingerprint":"chrome"}
+  - { name: 新加坡-hy2-04, server: sg.xn--wtq35pfyd55o.club, port: 20129, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, type: hysteria2, password: f04cea95-893d-4e7e-9e34-4bc032315781 }
+  - { name: 美国-hy2-05, server: us.xn--wtq35pfyd55o.club, port: 30219, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, type: hysteria2, password: f04cea95-893d-4e7e-9e34-4bc032315781 }
+  - {"name":"meta_hysteria_91","type":"hysteria","server":"www.dtku50.xyz","port":23577,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":600,"down":900}
+  - {"name": "Warp1","type":"wireguard","server": "188.114.98.73","port": 891,"ip":"172.16.0.2","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","private-key":"oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=","mtu":1280,"udp":true,"remote-dns-resolve": true,"dns":[ 1.1.1.1, 8.8.8.8 ]}
+  - {"name":"meta_hysteria_81","type":"hysteria","server":"62.204.54.81","port":46333,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":600,"down":900}
+  - {"name":"meta_tuic_71", "type": "tuic","server":"64.110.25.10","port":11227,"password":"dongtaiwang.com","uuid":"764b539f-2d3c-4772-9731-5ebf6984af98","disable_sni": false, "sni":"bing.com","alpn":["h3"],"skip-cert-verify": true, "udp-relay-mode":"native","congestion_control":"bbr", "reduce-rtt": true }
+  - {"name":"Sweden10","type":"vless","server":"5.42.72.194","port":443,"udp":true,"uuid":"2fb17e69-5b6f-49d4-991f-8bf26c001eb3","tls":true,"servername":"ftp.debian.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"IOJu9lxe2-fXVJ9z0-v2_5puh1NFagIr_nFHsBQty0w","short-id":"e241272d"},"client-fingerprint":"chrome"}
+  - name: meta_hysteria2_72
+    type: hysteria2
+    server: 45.145.72.212
+    port: 23520
+    up: "900 Mbps"
+    down: "900 Mbps"
+    password: dongtaiwang.com
+    sni: bing.com
+    skip-cert-verify: true
 
 proxy-groups:
   - name: 代理
@@ -37,13 +51,19 @@ proxy-groups:
     tolerance: 150
     proxies:
       - jump
+      - jp
       - SG
-      - defaultName_1
-      - defaultName_2
       - Hys1-6
       - rep
-      - reality_3_alvin
       - dtg2
+      - 新加坡-hy2-04
+      - 美国-hy2-05
+      - meta_hysteria_91
+      - Warp1
+      - meta_hysteria_81
+      - meta_tuic_71
+      - Sweden10
+      - meta_hysteria2_72
 
 rules:
   - GEOSITE,gfw,代理
