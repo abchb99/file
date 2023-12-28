@@ -1,4 +1,5 @@
 ﻿mixed-port: 7890
+# external-controller: 0.0.0.0:9090
 mode: rule
 log-level: info
 ipv6: true
@@ -18,6 +19,12 @@ dns:
   proxy-server-nameserver:
     - 208.67.220.220
     - 223.5.5.5
+ntp:
+  enable: true
+  write-to-system: true
+  server: ntp.aliyun.com
+  port: 123
+  interval: 300
 
 proxies:
   - {"name":"jump","type":"vmess","server":"127.0.0.1","port":333,"cipher":"auto","uuid":"94242109-0930-427f-f899-15d34021130c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu.org"}}}
@@ -39,6 +46,8 @@ proxy-groups:
     url: "https://www.gstatic.com/generate_204"
     interval: 5000
     tolerance: 150
+    lazy: true
+    disable-udp: true
     proxies:
       - jump
       - jp
