@@ -49,7 +49,7 @@ proxy-groups:
     proxies:
       - jump
       - Hys1-6
-      - rep
+#      - rep
       - 新加坡-hy2-04
       - 美国-hy2-05
       - meta_hysteria_91
