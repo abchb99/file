@@ -29,14 +29,14 @@ ntp:
 proxies:
   - {"name":"jump","type":"vmess","server":"127.0.0.1","port":333,"cipher":"auto","uuid":"94242109-0930-427f-f899-15d34021130c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu.org"}}}
   - {"name":"Hys1-6","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":600,"down":900}
-  - {"name":"rep","type":"trojan","server":"34.100.212.184","port":443,"udp":true,"password":"a5f12cce-f3a1-4818-900c-e3f374a1df5d","sni":"Microstation.Deeptang.repl.co","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/tr?ed=2048","headers":{"host":"Microstation.Deeptang.repl.co"}}}
   - { name: 新加坡-hy2-04, server: sg.xn--wtq35pfyd55o.club, port: 20129, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, type: hysteria2, password: f04cea95-893d-4e7e-9e34-4bc032315781 }
   - { name: 美国-hy2-05, server: us.xn--wtq35pfyd55o.club, port: 30219, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, type: hysteria2, password: f04cea95-893d-4e7e-9e34-4bc032315781 }
-  - {"name":"meta_hysteria_91","type":"hysteria","server":"www.dtku50.xyz","port":23577,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":600,"down":900}
   - {"name": "Warp1","type":"wireguard","server": "188.114.98.73","port": 891,"ip":"172.16.0.2","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","private-key":"oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=","mtu":1280,"udp":true,"remote-dns-resolve": true,"dns":[ 1.1.1.1, 8.8.8.8 ]}
-  - {"name":"meta_hysteria_81","type":"hysteria","server":"62.204.54.81","port":46333,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":600,"down":900}
   - {"name":"dtw3","type":"vless","server":"23.227.38.108","port":443,"uuid":"0773256c-d020-436d-afea-6eee7cb6c872","tls":true,"servername":"xray1.freegradely.xyz","network":"ws","ws-opts":{"path":"/bodhws?ed=2048","headers":{"host":"xray1.freegradely.xyz"}},"client-fingerprint":"chrome"}
-  - {"name":"捷克V2CROSS","type":"vmess","server":"109.123.230.157","port":80,"cipher":"auto","uuid":"877aa2a8-5854-4cb2-9aba-4a1413a6b2de","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/takeshi.wiki?ed=2048","headers":{"host":"dl.kgvn.garenanow.com"}}}
+  - {"name":"11227","server":"64.110.25.10","port":11227,"password":"dongtaiwang.com","uuid":"764b539f-2d3c-4772-9731-5ebf6984af98","sni":"bing.com","alpn":["h3"],"udp-relay-mode":"native","congestion_control":"bbr"}
+  - {"name":"hysteria2_2","type":"hysteria2","server":"167.160.90.252","port":63530,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":100}
+  - {"name":"578","type":"vmess","server":"5.78.73.241","port":3389,"cipher":"auto","uuid":"9c050a86-d612-48f1-ec32-e573df08a1b7","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
 
 proxy-groups:
   - name: 代理
@@ -49,14 +49,14 @@ proxy-groups:
     proxies:
       - jump
       - Hys1-6
-#      - rep
       - 新加坡-hy2-04
       - 美国-hy2-05
-      - meta_hysteria_91
       - Warp1
-      - meta_hysteria_81
       - dtw3
-      - 捷克V2CROSS
+      - 11227
+      - hysteria2_2
+      - hysteria_3
+      - 578
 
 rules:
   - GEOSITE,gfw,代理
