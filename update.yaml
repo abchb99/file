@@ -33,7 +33,9 @@ proxies:
   - {"name":"p4","type":"trojan","server":"fr1t-display.eurodns.tk","port":443,"udp":true,"password":"2b6813ab-12c6-304e-9d55-640f7c6070c9","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/3690dc09-26c3-57ab-b9cf-836523956698"}}
   - {"name":"jp","type":"vmess","server":"shcm03.sstr2024.cc","port":18629,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {name: 新加坡-hy2-04, type: hysteria2, server: sg.xn--wtq35pfyd55o.club, port: 20129, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, password: f04cea95-893d-4e7e-9e34-4bc032315781}
-  - {name: jp02, type: hysteria2, server: tw3.666669999.xyz, port: 60009, udp: true, skip-cert-verify: true, sni: us1.666669999.xyz, password: c19058c5-0702-410b-b2ca-6c47cc7a0e32}
+  - {name: tw3, type: hysteria2, server: tw3.666669999.xyz, port: 60009, udp: true, skip-cert-verify: true, sni: us1.666669999.xyz, password: c19058c5-0702-410b-b2ca-6c47cc7a0e32}
+  - {name: jp2, type: hysteria2, server: jp2.666669999.xyz, port: 60009, udp: true, skip-cert-verify: true, sni: us1.666669999.xyz, password: c19058c5-0702-410b-b2ca-6c47cc7a0e32}
+  - {name: hk1, type: hysteria2, server: hk1.666669999.xyz, port: 56601, udp: true, skip-cert-verify: true, sni: us1.666669999.xyz, password: c19058c5-0702-410b-b2ca-6c47cc7a0e32}
 
 proxy-groups:
   - name: 代理
@@ -50,7 +52,9 @@ proxy-groups:
       - p4
       - jp
       - 新加坡-hy2-04
-      - jp02
+      - tw3
+      - jp2
+      - hk1
 
 rules:
   - GEOSITE,gfw,代理
