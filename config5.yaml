@@ -1,5 +1,4 @@
 ﻿mixed-port: 7890
-# external-controller: 0.0.0.0:9090
 mode: rule
 log-level: info
 ipv6: true
@@ -13,9 +12,7 @@ dns:
   default-nameserver: 
     - 223.5.5.5
   nameserver:
-    - quic://dns.adguard.com
     - tls://dns.cleanbrowsing.org
-    - tls://dns.opendns.com
   proxy-server-nameserver:
     - 208.67.220.220
     - 223.5.5.5
@@ -77,14 +74,17 @@ rules:
   - GEOSITE,intel,DIRECT
   - GEOSITE,ibm,DIRECT
   - GEOSITE,cloudflare,DIRECT
-  - GEOSITE,private,DIRECT
-  - GEOSITE,cn,DIRECT
   - DOMAIN-KEYWORD,tiandix,代理
   - DOMAIN-KEYWORD,gongyi,代理
   - DOMAIN-KEYWORD,shenyun,代理
   - DOMAIN-KEYWORD,falun,代理
   - DOMAIN-KEYWORD,minghui,代理
   - DOMAIN-KEYWORD,ganjing,代理
+  - DOMAIN-KEYWORD,ticketingbox,代理
+  - DOMAIN-KEYWORD,fayuan,代理
+#  - DOMAIN-KEYWORD,recaptcha,代理
+  - GEOSITE,private,DIRECT
+  - GEOSITE,cn,DIRECT
   - GEOIP,private,DIRECT
   - GEOIP,CN,DIRECT
   - IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
