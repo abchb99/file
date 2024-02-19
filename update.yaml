@@ -81,6 +81,7 @@ rules:
   - DOMAIN-KEYWORD,cloudokyo,代理
   - DOMAIN-KEYWORD,edgefare,DIRECT
   - DOMAIN-KEYWORD,wikipedia,代理
+  - DOMAIN-KEYWORD,github,代理
   - GEOSITE,falungong,代理
   - GEOSITE,google,代理
   - GEOSITE,github,代理
