@@ -50,7 +50,6 @@ proxy-groups:
       - jp2
       - hy2
       - us7
-      - Den导入box后需修改
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
