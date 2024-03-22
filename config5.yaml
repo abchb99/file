@@ -28,10 +28,10 @@ proxies:
 #   - {"name": "Warp1","type":"wireguard","server": "188.114.98.73","port": 891,"ip":"172.16.0.2","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","private-key":"oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=","mtu":1280,"udp":true,"remote-dns-resolve": true,"dns":[ 1.1.1.1, 8.8.8.8 ]}
   - {"name":"p4","type":"trojan","server":"fr1t-display.myddns.cyou","port":443,"udp":true,"password":"2b6813ab-12c6-304e-9d55-640f7c6070c9","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/3690dc09-26c3-57ab-b9cf-836523956698"}}
   - {name: us-hy2-02, type: hysteria2, server: sg.xn--wtq35pfyd55o.club, port: 20129, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, password: f04cea95-893d-4e7e-9e34-4bc032315781}
-  - {name: jp2, type: hysteria2, server: jp2.666669999.xyz, port: 60009, udp: true, skip-cert-verify: true, sni: us1.666669999.xyz, password: c19058c5-0702-410b-b2ca-6c47cc7a0e32}
-  - {"name":"hy2","type":"hysteria2","server":"64.110.25.11","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {name: jp2, type: hysteria2, server: us3.666669999.xyz, port: 60001, udp: true, skip-cert-verify: true, sni: us1.666669999.xyz, password: c19058c5-0702-410b-b2ca-6c47cc7a0e32}
   - {"name":"us7","type":"vmess","server":"104.18.106.64","port":80,"cipher":"auto","uuid":"121b1eee-528d-4f03-bfed-c584485f49d2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"nl1.mybestjj.com"}}}
   - {"name":"us5-慢-备用","type":"vmess","server":"www.digitalocean.com","port":80,"cipher":"auto","uuid":"121b1eee-528d-4f03-bfed-c584485f49d2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"nl1.mybestjj.com"}}}
+  - {"name":"Hys1","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":50,"down":50}
 
 proxy-groups:
   - name: 代理
@@ -47,8 +47,8 @@ proxy-groups:
       - p4
       - us-hy2-02
       - jp2
-      - hy2
       - us7
+      - Hys1
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
