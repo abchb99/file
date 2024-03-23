@@ -31,7 +31,9 @@ proxies:
   - {name: jp2, type: hysteria2, server: us3.666669999.xyz, port: 60001, udp: true, skip-cert-verify: true, sni: us1.666669999.xyz, password: c19058c5-0702-410b-b2ca-6c47cc7a0e32}
   - {"name":"us7","type":"vmess","server":"104.18.106.64","port":80,"cipher":"auto","uuid":"121b1eee-528d-4f03-bfed-c584485f49d2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"nl1.mybestjj.com"}}}
   - {"name":"us5-慢-备用","type":"vmess","server":"www.digitalocean.com","port":80,"cipher":"auto","uuid":"121b1eee-528d-4f03-bfed-c584485f49d2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"nl1.mybestjj.com"}}}
-  - {"name":"Hys1","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":50,"down":50}
+  - {"name":"hy1a","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":50,"down":50}
+  - {"name":"hy1b","type":"hysteria","server":"173.234.25.52","port":48919,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
+  - {"name":"hy2a","type":"hysteria2","server":"51.159.77.153","port":33390,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
 
 proxy-groups:
   - name: 代理
@@ -43,12 +45,14 @@ proxy-groups:
     disable-udp: true
     proxies:
       - jump
+      - hy1a
+      - hy1b
+      - hy2a
 #       - Warp1
       - p4
       - us-hy2-02
       - jp2
       - us7
-      - Hys1
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
