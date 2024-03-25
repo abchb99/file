@@ -34,6 +34,7 @@ proxies:
   - {"name":"hy1a","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":50,"down":50}
   - {"name":"hy1b","type":"hysteria","server":"173.234.25.52","port":48919,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"hy2a","type":"hysteria2","server":"51.159.77.153","port":33390,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
+  - {"name":"sg","type":"vmess","server":"d9c2961dc2aedd3a.cdn.jiashule.com","port":28038,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
 
 proxy-groups:
   - name: 代理
@@ -45,14 +46,15 @@ proxy-groups:
     disable-udp: true
     proxies:
       - jump
-      - hy1a
+#      - Warp1
+#      - hy1a
       - hy1b
       - hy2a
-#       - Warp1
       - p4
       - us-hy2-02
       - jp2
       - us7
+      - sg
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
