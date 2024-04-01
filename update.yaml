@@ -32,6 +32,7 @@ proxies:
   - {"name":"us7","type":"vmess","server":"104.18.106.64","port":80,"cipher":"auto","uuid":"121b1eee-528d-4f03-bfed-c584485f49d2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"nl1.mybestjj.com"}}}
   - {"name":"us5-慢-备用","type":"vmess","server":"www.digitalocean.com","port":80,"cipher":"auto","uuid":"121b1eee-528d-4f03-bfed-c584485f49d2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"nl1.mybestjj.com"}}}
   - {"name":"hy2a","type":"hysteria2","server":"51.159.77.153","port":33390,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
+  - {"name":"hy2b","type":"hysteria2","server":"62.210.103.0","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
 
 proxy-groups:
   - name: 代理
@@ -43,8 +44,8 @@ proxy-groups:
     disable-udp: true
     proxies:
       - jump
-      - Warp1
       - hy2a
+      - hy2b
       - p4
       - us-hy2-02
       - jp2
