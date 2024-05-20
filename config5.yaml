@@ -32,6 +32,8 @@ proxies:
   - {"name":"hy2a","type":"hysteria2","server":"51.159.77.153","port":33390,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
   - {"name":"hy2b","type":"hysteria2","server":"62.210.103.0","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"sg","type":"vmess","server":"52.77.242.207","port":28038,"cipher":"auto","uuid":"7876aa0c-8408-4231-ba34-acb981a9a64a","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"vmess-sg.19991314.xyz","network":"ws","ws-opts":{"path":"/ws?ed=2048","headers":{"host":"vmess-sg.19991314.xyz"}}}
+  - {"name":"6222","type":"ss","server":"gy.666666222.shop","port":20015,"password":"c19058c5-0702-410b-b2ca-6c47cc7a0e32","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"橘子01","type":"vless","server":"193.227.99.183","port":443,"uuid":"f775978b-6e22-41a8-ae5e-5f9779e6745f","tls":true,"servername":"juzibaipiao.5112233.xyz","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"juzibaipiao.5112233.xyz"}},"client-fingerprint":"random"}
 
 proxy-groups:
   - name: 代理
@@ -49,6 +51,8 @@ proxy-groups:
       - us-hy2-02
       - us7
       - sg
+      - 6222
+      - 橘子01
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
