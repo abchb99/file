@@ -26,10 +26,10 @@ ntp:
 proxies:
   - {"name":"jump","type":"vmess","server":"127.0.0.1","port":333,"cipher":"auto","uuid":"94242109-0930-427f-f899-15d34021130c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu.org"}}}
   - {"name":"p4","type":"trojan","server":"us2t-videos.88888803.xyz","port":443,"udp":true,"password":"2b6813ab-12c6-304e-9d55-640f7c6070c9","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/3690dc09-26c3-57ab-b9cf-836523956698"}}
-  - {name: us-hy2, type: hysteria2, server: us.xn--wtq35pfyd55o.club, port: 30219, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, password: f04cea95-893d-4e7e-9e34-4bc032315781}
-  - {"name":"hy2a","type":"hysteria2","server":"51.159.77.153","port":33390,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"hy2b","type":"hysteria2","server":"62.210.103.0","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"v6","type":"vmess","server":"172.64.99.22","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
+  - {"name":"v7","type":"vmess","server":"104.20.25.146","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
+  - {"name":"v8","type":"vmess","server":"104.26.7.132","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
+  - {"name":"sg5","type":"ss","server":"svip.365ip.cloud","port":22005,"password":"157d2452-a3a0-4cd1-a1b9-1d6d6c486558","cipher":"aes-256-gcm"}
   - {"name":"6222","type":"ss","server":"gy.666666222.shop","port":20015,"password":"4bc910e3-7ccd-4f27-8e8e-abf5c6c34a31","cipher":"chacha20-ietf-poly1305"}
 
 proxy-groups:
@@ -43,10 +43,10 @@ proxy-groups:
     proxies:
       - jump
       - p4
-      - us-hy2
-      - hy2a
-      - hy2b
       - v6
+      - v7
+      - v8
+      - sg5
       - 6222
 
 rules:
