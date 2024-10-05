@@ -26,28 +26,30 @@ ntp:
 proxies:
   - {"name":"jump","type":"vmess","server":"127.0.0.1","port":333,"cipher":"auto","uuid":"94242109-0930-427f-f899-15d34021130c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu.org"}}}
   - {"name":"p4","type":"trojan","server":"us2t-videos.88888801.xyz","port":443,"udp":true,"password":"2b6813ab-12c6-304e-9d55-640f7c6070c9","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/3690dc09-26c3-57ab-b9cf-836523956698"}}
-  - {"name":"v6","type":"vmess","server":"172.64.99.22","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
-  - {"name":"v7","type":"vmess","server":"104.20.25.146","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
-  - {"name":"v8","type":"vmess","server":"104.26.7.132","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
-  - {"name":"v9","type":"vmess","server":"23.227.38.3","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip14.freegradely.xyz"}}}
-  - {"name":"v10","type":"vmess","server":"www.visa.com","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"github.com/Alvin9999","headers":{"host":"ip1.1789034.xyz"}}}
+  - {"name":"hy1a","type":"hysteria","server":"64.42.176.179","port":"19513","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
+  - {"name":"hy2a","type":"hysteria2","server":"207.90.239.157","port":3400,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"reality1_alvin","type":"vless","server":"45.150.165.121","port":7885,"udp":true,"uuid":"82f6a148-5c4a-48f9-931a-e3b26777ffa2","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"cauu7I7nFMqzwMDdULVRJam0T04U4knX8koK0OG5dC8","short-id":"40cb281a"},"client-fingerprint":"chrome"}
+  - {"name":"reality2_alvin","type":"vless","server":"64.42.176.180","port":44008,"udp":true,"uuid":"7c90a89e-63b3-4d40-90c6-1b5f1aa14e38","tls":true,"servername":"nijigen-works.jp","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"EdE36arx2ZEamAp3e60zvwSdcrCr4CU9HI5bFTvh9W0","short-id":"fada62ff6504c59a"},"client-fingerprint":"chrome"}
+  - {"name":"ca","type":"vless","server":"carmelo.ns.cloudflare.com","port":80,"uuid":"571f64c7-bff0-4d33-8765-56ad2334cb55","servername":"ca.ailicf.us.kg","network":"ws","ws-opts":{"path":"/ascb","headers":{"host":"ca.ailicf.us.kg"}}}
+  - {name: sg-hy2, type: hysteria2, server: pianyi.interld123456789.com, port: 443, ports: 13101-13300, hop-interval: 10, udp: true, skip-cert-verify: true, sni: 1231231.1234567890spcloud.com, password: f04cea95-893d-4e7e-9e34-4bc032315781}
 
 proxy-groups:
   - name: 代理
     type: url-test
     url: "https://dongtaiwang.com/generate_204"
-    interval: 5000
+    interval: 1000
     tolerance: 150
     lazy: true
     disable-udp: true
     proxies:
       - jump
       - p4
-      - v6
-      - v7
-      - v8
-      - v9
-      - v10
+      - hy1a
+      - hy2a
+      - reality1_alvin
+      - reality2_alvin
+      - ca
+      - sg-hy2
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
