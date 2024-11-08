@@ -29,6 +29,7 @@ proxies:
   - {"name":"reality1_alvin","type":"vless","server":"45.150.165.121","port":7885,"udp":true,"uuid":"82f6a148-5c4a-48f9-931a-e3b26777ffa2","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"cauu7I7nFMqzwMDdULVRJam0T04U4knX8koK0OG5dC8","short-id":"40cb281a"},"client-fingerprint":"chrome"}
   - {"name":"reality2_alvin","type":"vless","server":"64.42.176.180","port":44008,"udp":true,"uuid":"7c90a89e-63b3-4d40-90c6-1b5f1aa14e38","tls":true,"servername":"nijigen-works.jp","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"EdE36arx2ZEamAp3e60zvwSdcrCr4CU9HI5bFTvh9W0","short-id":"fada62ff6504c59a"},"client-fingerprint":"chrome"}
   - {"name":"ca","type":"vless","server":"carmelo.ns.cloudflare.com","port":80,"uuid":"571f64c7-bff0-4d33-8765-56ad2334cb55","servername":"ca.ailicf.us.kg","network":"ws","ws-opts":{"path":"/ascb","headers":{"host":"ca.ailicf.us.kg"}}}
+  - {"name":"p4","type":"vmess","server":"us3t.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/microsoft","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - {"name":"hg3","type":"hysteria2","server":"146.56.116.145","port":55228,"password":"b0c9894f-5bc7-4475-974f-7d9889d2dcef","sni":"bing.com","skip-cert-verify":true}
   - name: warp1
     type: wireguard
@@ -58,6 +59,7 @@ proxy-groups:
       - reality2_alvin
       - ca
       - warp1
+      - p4
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
