@@ -29,11 +29,10 @@ proxies:
   - {"name":"hy1a","type":"hysteria","server":"195.154.200.40","port":"2345","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"hy2a","type":"hysteria","server":"2.0035961.xyz","port":"19627","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"hy3a","type":"hysteria","server":"1.0035961.xyz","port":"15806","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
-  - {"name":"hy4a-obfs","type":"hysteria","server":"154.29.159.137","port":"100","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"obfs":"dongtaiwang.com","auth_str":"dongtaiwang.com","up":50,"down":50}
-  - {"name":"ca","type":"vless","server":"carmelo.ns.cloudflare.com","port":80,"uuid":"571f64c7-bff0-4d33-8765-56ad2334cb55","servername":"ca.ailicf.us.kg","network":"ws","ws-opts":{"path":"/ascb","headers":{"host":"ca.ailicf.us.kg"}}}
-  - {"name":"p4","type":"vmess","server":"us3t.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/microsoft","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
+  - {"name":"ca","type":"vless","server":"carmelo.ns.cloudflare.com","port":80,"uuid":"b5cdabf0-e048-4fa2-90da-9379b1a4926e","network":"ws","ws-opts":{"path":"/b5cdabf0-e04","headers":{"host":"cc.ailicf.us.kg"}}}
+  - {"name":"p4","type":"vmess","server":"us2t.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/microsoft","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - {"name":"p3","type":"trojan","server":"2024-us4a.88888806.xyz","port":443,"udp":true,"password":"c97cf46e-1554-36cb-8b36-c3556b883dc4","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/92024db4-eadf-4cd1-b7e5-87d047d353f0"}}
-  - {"name":"hkaa","type":"vmess","server":"23.162.200.227","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"23.162.200.227","network":"ws","ws-opts":{"path":"/linkvws","headers":{"host":"23.162.200.227"}}}
+  - {"name":"uk001","type":"hysteria2","server":"uk-001.xiaoxiaobujidao.xyz","port":443,"password":"e794daab-254f-4756-8ff7-e937aec373e0","sni":"uk-001.xiaoxiaobujidao.xyz","skip-cert-verify":true}
   - {"name":"hg3","type":"hysteria2","server":"146.56.116.145","port":55228,"password":"b0c9894f-5bc7-4475-974f-7d9889d2dcef","sni":"bing.com","skip-cert-verify":true}
   - name: warp1
     type: wireguard
@@ -62,12 +61,11 @@ proxy-groups:
       - hy1a
       - hy2a
       - hy3a
-      - hy4a-obfs
       - ca
       - warp1
       - p3
       - p4
-      - hkaa
+      - uk001
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
