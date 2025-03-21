@@ -36,7 +36,7 @@ proxy-groups:
   - name: 代理
     type: url-test
     url: "https://dongtaiwang.com/generate_204"
-    interval: 1000
+    interval: 3000
     tolerance: 150
     lazy: true
     disable-udp: true

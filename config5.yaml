@@ -30,25 +30,12 @@ proxies:
   - {"name":"p4","type":"vmess","server":"fr3.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/fr333gogofa","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - {"name":"p3","type":"trojan","server":"2024-us2a.88888806.xyz","port":443,"udp":true,"password":"c97cf46e-1554-36cb-8b36-c3556b883dc4","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/92024db4-eadf-4cd1-b7e5-87d047d353f0"}}
   - {"name":"uk001","type":"hysteria2","server":"px-002.xiaoxiaobujidao.xyz","port":443,"password":"e794daab-254f-4756-8ff7-e937aec373e0","sni":"tk-006.xiaoxiaobujidao.xyz","skip-cert-verify":true}
-  - {"name":"hg3","type":"hysteria2","server":"146.56.116.145","port":55228,"password":"b0c9894f-5bc7-4475-974f-7d9889d2dcef","sni":"bing.com","skip-cert-verify":true}
-  - name: warp1
-    type: wireguard
-    server: 188.114.98.73
-    port: 891
-    ip: 172.16.0.2
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    private-key: oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=
-    mtu: 1280
-    udp: true
-    remote-dns-resolve: true
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: hg3
 
 proxy-groups:
   - name: 代理
     type: url-test
     url: "https://dongtaiwang.com/generate_204"
-    interval: 5000
+    interval: 3000
     tolerance: 150
     lazy: true
     disable-udp: true
@@ -56,7 +43,6 @@ proxy-groups:
       - jump
       - reality1_alvin
       - hy1a
-#      - warp1
       - p3
       - p4
       - uk001
