@@ -28,8 +28,8 @@ proxies:
   - {"name":"reality1_alvin","type":"vless","server":"45.150.165.121","port":7885,"udp":true,"uuid":"82f6a148-5c4a-48f9-931a-e3b26777ffa2","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"cauu7I7nFMqzwMDdULVRJam0T04U4knX8koK0OG5dC8","short-id":"40cb281a"},"client-fingerprint":"chrome"}
   - {"name":"hy1a","type":"hysteria","server":"195.154.200.40","port":"15010","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"p4","type":"vmess","server":"fr3.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/fr333gogofa","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
-  - {"name":"p3","type":"vmess","server":"us2a-20250406.88888007.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
-  - {"name":"uk001","type":"hysteria2","server":"px-002.xiaoxiaobujidao.xyz","port":443,"password":"e794daab-254f-4756-8ff7-e937aec373e0","sni":"tk-006.xiaoxiaobujidao.xyz","skip-cert-verify":true}
+  - {"name":"p3","type":"vmess","server":"us3a-20250420.88888009.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
+  - {"name":"uk001","type":"hysteria2","server":"uk-001.xiaoxiaobujidao.xyz","port":443,"password":"e794daab-254f-4756-8ff7-e937aec373e0","sni":"tk-006.xiaoxiaobujidao.xyz","skip-cert-verify":true}
 
 proxy-groups:
   - name: 代理
