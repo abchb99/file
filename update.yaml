@@ -29,7 +29,14 @@ proxies:
   - { name: do1, type: vless, server: us3do.interld123456789.com, port: 10002, uuid: f04cea95-893d-4e7e-9e34-4bc032315781, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc, short-id: ad081079 } }
   - {"name":"p4","type":"vmess","server":"fr3.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/fr333gogofa","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - {"name":"p3","type":"vmess","server":"us3a-20250420.88888009.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
-  - {"name":"43516", "type": "tuic","server":"185.22.155.105","port":43516,"password":"f3ba3679-f2f4-465f-92a5-de320b775a88","uuid":"f3ba3679-f2f4-465f-92a5-de320b775a88","disable_sni": false, "sni":"www.bing.com","alpn":["h3"],"skip-cert-verify": true, "udp-relay-mode":"native","congestion_control":"bbr", "reduce-rtt": false }
+  - name: hg4
+    type: trojan
+    server: starlink-sol2.2513142.xyz
+    password: -M5DeN4D0-xNdaZihWwThyto
+    port: 443
+    sni: www.cloudflare.com
+    skip-cert-verify: true
+    udp: true
 
 proxy-groups:
   - name: 代理
@@ -44,7 +51,7 @@ proxy-groups:
       - hy1a
       - p3
       - p4
-      - 43516
+      - hg4
       - do1
 
 rules:
