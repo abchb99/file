@@ -25,7 +25,6 @@ ntp:
 
 proxies:
   - {"name":"jump","type":"vmess","server":"127.0.0.1","port":333,"cipher":"auto","uuid":"94242109-0930-427f-f899-15d34021130c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu.org"}}}
-  - {"name":"hy1a","type":"hysteria","server":"195.154.200.40","port":"15010","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"hy1b","type":"hysteria","server":"62.210.10.113","port":22662,"sni":"apple.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
   - { name: do1, type: vless, server: us3do.interld123456789.com, port: 10002, uuid: f04cea95-893d-4e7e-9e34-4bc032315781, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc, short-id: ad081079 } }
   - {"name":"p4","type":"vmess","server":"fr3.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/fr333gogofa","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
@@ -41,7 +40,6 @@ proxy-groups:
     disable-udp: true
     proxies:
       - jump
-      - hy1a
       - hy1b
       - p3
       - p4
