@@ -51,7 +51,7 @@ proxies:
     reality-opts:
       public-key: vMHW4_fx7bd_4bFZN9ecx58xSjv6SLg0wRYrdI62yUo
       short-id: ""
-  - { name: 用太快会断开几小时, type: trojan, server: starlink-sgp3.2513142.xyz, password: -M5DeN4D0-xNdaZihWwThyto, port: 20443, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+  - { name: 用太快会断开几小时, type: trojan, server: starlink-sgp6.2513142.xyz, password: -M5DeN4D0-xNdaZihWwThyto, port: 443, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
 
 proxy-groups:
   - name: 代理
