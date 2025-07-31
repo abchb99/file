@@ -25,7 +25,7 @@ ntp:
 
 proxies:
   - {"name":"jump","type":"vmess","server":"127.0.0.1","port":333,"cipher":"auto","uuid":"94242109-0930-427f-f899-15d34021130c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu.org"}}}
-  - {"name":"hy1b","type":"hysteria","server":"62.210.10.113","port":22662,"sni":"apple.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
+  - {"name":"hy1a","type":"hysteria","server":"195.154.200.40","port":"15010","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"p3","type":"vmess","server":"us3a-20250420.88888009.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - {"name":"p4","type":"vmess","server":"fr3.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/fr333gogofa","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - name: uk01
@@ -51,7 +51,7 @@ proxies:
     reality-opts:
       public-key: vMHW4_fx7bd_4bFZN9ecx58xSjv6SLg0wRYrdI62yUo
       short-id: ""
-  - { name: 用太快会断开几小时, type: trojan, server: starlink-sgp6.2513142.xyz, password: -M5DeN4D0-xNdaZihWwThyto, port: 443, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
+  - { name: 用太快会断开几小时, type: trojan, server: starlink-sg6.2513142.xyz, password: -M5DeN4D0-xNdaZihWwThyto, port: 443, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
 
 proxy-groups:
   - name: 代理
@@ -64,7 +64,7 @@ proxy-groups:
     proxies:
       - jump
       - uk01
-      - hy1b
+      - hy1a
       - p3
       - p4
       - 用太快会断开几小时
