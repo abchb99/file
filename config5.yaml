@@ -51,8 +51,25 @@ proxies:
     reality-opts:
       public-key: vMHW4_fx7bd_4bFZN9ecx58xSjv6SLg0wRYrdI62yUo
       short-id: ""
-  - { name: 用太快会断开几小时, type: trojan, server: starlink-jp6.2513142.xyz, password: -M5DeN4D0-xNdaZihWwThyto, port: 443, sni: www.cloudflare.com, skip-cert-verify: true, udp: true }
   - {"name":"hy1c","type":"hysteria","server":"62.210.127.217","port":"50011","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
+  - name: warp
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 2408
+    ip: 172.16.0.2
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    private-key: oJDoX3XycAEs7GAMxWR8iq7egbTVa3aqsLdbv7dDl0E=
+    mtu: 1280
+    udp: true
+    remote-dns-resolve: true
+    dns: [ 1.1.1.1, 8.8.8.8 ]
+    dialer-proxy: nodtw
+  - {"name":"nodtw","type":"vmess","server":"zhuli.jineng.buzz","port":80,"cipher":"auto","uuid":"5f7f2117-5704-4491-8255-13c031236a09","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"Host":"sg.jineng.buzz"}}}
+  - {"name":"用太快会断开几小时","type":"hysteria2","server":"starlink-us2.2513142.xyz","port":25131,"password":"-M5DeN4D0-xNdaZihWwThyto","sni":"www.cloudflare.com","skip-cert-verify":true}
+  - {"name":"linlu","type":"hysteria2","server":"us-nb-03.linlujs.pw","port":25411,"password":"75ea3bb9-f625-4602-b3fb-6fd659c01fbd","skip-cert-verify":true}
+  - {"name":"lzj","type":"hysteria2","server":"206.71.158.37","port":36300,"password":"Yet-Another-Public-Config-1","sni":"YAPC-1.afshin.ir","obfs":"salamander","obfs-password":"Yet-Another-Public-Config-1","skip-cert-verify":true}
+  - {"name":"imalrzai","type":"trojan","server":"15.204.248.103","port":443,"password":"b57b594d-9ac4-4f94-834f-092a422f2ef7","tls":true,"sni":"rs3.freeguard.org","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"git1","type":"hysteria2","server":"gavazn.lnmarketplace.net","port":45000,"password":"Telegram-->@Ln2Ray","sni":"gavazn.55994421.xyz","obfs":"salamander","obfs-password":"Telegram-->@Ln2Ray","skip-cert-verify":true}
 
 proxy-groups:
   - name: 代理
@@ -70,6 +87,11 @@ proxy-groups:
       - p3
       - p4
       - 用太快会断开几小时
+      - warp
+      - linlu
+      - lzj
+      - imalrzai
+      - git1
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
