@@ -64,7 +64,7 @@ proxies:
     remote-dns-resolve: true
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: nodtw
-  - {"name":"nodtw","type":"vmess","server":"zhuli.jineng.buzz","port":80,"cipher":"auto","uuid":"5f7f2117-5704-4491-8255-13c031236a09","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"Host":"sg.jineng.buzz"}}}
+  - {"name":"nodtw","type":"trojan","server":"36.141.40.42","port":13007,"password":"3c77ad6b-9c9c-4aff-beff-0a16e2cdea15","tls":true,"sni":"cloudflare.node-ssl.cdn-alibaba.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"用太快会断开几小时","type":"hysteria2","server":"starlink-us2.2513142.xyz","port":25131,"password":"-M5DeN4D0-xNdaZihWwThyto","sni":"www.cloudflare.com","skip-cert-verify":true}
   - {"name":"linlu","type":"hysteria2","server":"us-nb-03.linlujs.pw","port":25411,"password":"75ea3bb9-f625-4602-b3fb-6fd659c01fbd","skip-cert-verify":true}
   - {"name":"lzj","type":"hysteria2","server":"206.71.158.37","port":36300,"password":"Yet-Another-Public-Config-1","sni":"YAPC-1.afshin.ir","obfs":"salamander","obfs-password":"Yet-Another-Public-Config-1","skip-cert-verify":true}
