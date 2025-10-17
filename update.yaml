@@ -30,10 +30,9 @@ proxies:
   - { name: do1, type: vless, server: us3do.interld123456789.com, port: 10002, uuid: f04cea95-893d-4e7e-9e34-4bc032315781, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: firefox, servername: addons.mozilla.org, reality-opts: { public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc, short-id: ad081079 } }
   - {"name":"p4","type":"vmess","server":"fr3.88888008.xyz","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/fr333gogofa","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - {"name":"p3","type":"vmess","server":"us4a-20250922.88888009.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows11","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
-  - {"name":"linlu","type":"hysteria2","server":"us-nb-03.linlujs.pw","port":25411,"password":"75ea3bb9-f625-4602-b3fb-6fd659c01fbd","skip-cert-verify":true}
-  - {"name":"lzj","type":"hysteria2","server":"206.71.158.37","port":36300,"password":"Yet-Another-Public-Config-1","sni":"YAPC-1.afshin.ir","obfs":"salamander","obfs-password":"Yet-Another-Public-Config-1","skip-cert-verify":true}
+  - {"name":"linlu","type":"hysteria2","server":"tw-me-03.linlujs.pw","port":30044,"password":"75ea3bb9-f625-4602-b3fb-6fd659c01fbd","skip-cert-verify":true}
   - {"name":"imalrzai","type":"trojan","server":"15.204.248.103","port":443,"password":"b57b594d-9ac4-4f94-834f-092a422f2ef7","tls":true,"sni":"rs3.freeguard.org","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"git1","type":"hysteria2","server":"gavazn.lnmarketplace.net","port":45000,"password":"Telegram-->@Ln2Ray","sni":"gavazn.55994421.xyz","obfs":"salamander","obfs-password":"Telegram-->@Ln2Ray","skip-cert-verify":true}
+  - {"name":"hy1a","type":"hysteria","server":"195.154.200.40","port":"15010","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
 
 proxy-groups:
   - name: 代理
@@ -51,9 +50,8 @@ proxy-groups:
       - p4
       - do1
       - linlu
-      - lzj
+      - hy1a
       - imalrzai
-      - git1
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
