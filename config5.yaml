@@ -52,7 +52,6 @@ proxies:
   - {"name":"hy1a","type":"hysteria","server":"195.154.200.40","port":"15010","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"hy1b","type":"hysteria","server":"62.210.10.113","port":13767,"sni":"apple.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
   - {"name":"hy1c","type":"hysteria","server":"62.210.127.217","port":"50011","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
-  - {"name":"用太快会断开几小时","type":"hysteria2","server":"starlink-us2.2513142.xyz","port":25131,"password":"BHx6lJyJoAFvQ1ZXb4pMs23R","sni":"www.cloudflare.com","skip-cert-verify":true}
   - {"name":"imalrzai","type":"trojan","server":"15.204.248.103","port":443,"password":"b57b594d-9ac4-4f94-834f-092a422f2ef7","tls":true,"sni":"rs3.freeguard.org","skip-cert-verify":true,"network":"tcp"}
   - {"name":"dpdns","server":"51.83.4.33","port":24220,"type":"vless","uuid":"336a38b9-6107-485a-a062-6162985c4b2d","tls":true,"tfo":false,"skip-cert-verify":true,"reality-opts":{"public-key":"x2kWGnpn4JHmqY1y-nyAZvhgvnoXRu1CECo2S6wutm0","short-id":"6c78c2b5178ca4"},"client-fingerprint":"chrome","network":"tcp","servername":"icloud.com"}
 
@@ -71,7 +70,6 @@ proxy-groups:
       - hy1a
       - hy1b
       - hy1c
-      - 用太快会断开几小时
       - imalrzai
       - dpdns
 
