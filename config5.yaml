@@ -53,7 +53,7 @@ proxies:
   - {"name":"hy1b","type":"hysteria","server":"62.210.10.113","port":13767,"sni":"apple.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
   - {"name":"hy1c","type":"hysteria","server":"62.210.127.217","port":"50011","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"imalrzai","type":"trojan","server":"15.204.248.103","port":443,"password":"b57b594d-9ac4-4f94-834f-092a422f2ef7","tls":true,"sni":"rs3.freeguard.org","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"dpdns","server":"51.83.4.33","port":24220,"type":"vless","uuid":"336a38b9-6107-485a-a062-6162985c4b2d","tls":true,"tfo":false,"skip-cert-verify":true,"reality-opts":{"public-key":"x2kWGnpn4JHmqY1y-nyAZvhgvnoXRu1CECo2S6wutm0","short-id":"6c78c2b5178ca4"},"client-fingerprint":"chrome","network":"tcp","servername":"icloud.com"}
+  - {"name":"dpdns","server":"65.109.91.40","port":56052,"type":"vless","uuid":"b6aad706-f464-43d3-a5e8-f1616a5e7618","tls":true,"tfo":false,"flow":"xtls-rprx-vision","skip-cert-verify":false,"reality-opts":{"public-key":"rE45_tia3_E3m-iIyZlMntEXPij85fPfxEyY_YYhJkg","short-id":"3d3d64"},"client-fingerprint":"chrome","network":"tcp","servername":"icloud.com"}
 
 proxy-groups:
   - name: 代理
