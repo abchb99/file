@@ -51,9 +51,10 @@ proxies:
       short-id: ""
   - {"name":"hy1a","type":"hysteria","server":"195.154.200.40","port":"15010","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"hy1b","type":"hysteria","server":"62.210.10.113","port":13767,"sni":"apple.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
-  - {"name":"hy1c","type":"hysteria","server":"62.210.127.217","port":"50011","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
+  - {"name":"hy1c","type":"hysteria","server":"62.210.10.186","port":"50011","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":50,"down":50}
   - {"name":"imalrzai","type":"trojan","server":"15.204.248.103","port":443,"password":"b57b594d-9ac4-4f94-834f-092a422f2ef7","tls":true,"sni":"rs3.freeguard.org","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"dpdns","server":"65.109.91.40","port":56052,"type":"vless","uuid":"b6aad706-f464-43d3-a5e8-f1616a5e7618","tls":true,"tfo":false,"flow":"xtls-rprx-vision","skip-cert-verify":false,"reality-opts":{"public-key":"rE45_tia3_E3m-iIyZlMntEXPij85fPfxEyY_YYhJkg","short-id":"3d3d64"},"client-fingerprint":"chrome","network":"tcp","servername":"icloud.com"}
+  - {"name":"dpdns1","server":"185.219.189.9","port":42624,"type":"vless","uuid":"e1f43001-2649-4f9b-8c47-6f8d92a7ff71","tls":true,"tfo":false,"flow":"xtls-rprx-vision","skip-cert-verify":false,"reality-opts":{"public-key":"Un3DOCCwT-EWR3qnpNEI-DQOfgzx79CLZhELo5-rVBY","short-id":"05"},"client-fingerprint":"chrome","network":"tcp","servername":"icloud.com"}
+  - {"name":"yys","type":"hysteria2","server":"yiselieamd.959555.xyz","port":10000,"password":"9cf24cf6-a099-4cb0-b03e-f339cb969222","sni":"yiselieamd.959555.xyz","skip-cert-verify":true}
 
 proxy-groups:
   - name: 代理
@@ -71,7 +72,8 @@ proxy-groups:
       - hy1b
       - hy1c
       - imalrzai
-      - dpdns
+      - dpdns1
+      - yys
 
 rules:
   - DOMAIN-KEYWORD,tiandix,代理
