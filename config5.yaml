@@ -29,8 +29,8 @@ proxies:
   - {"name":"hy1d","type":"hysteria","server":"198.200.57.142","port":"22335","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"github.com/Alvin9999-newpac/fanqiang","up":99,"down":99}
   - {"name":"hy1c","type":"hysteria","server":"163.172.117.163","port":"36699","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":99,"down":99}
   - {"name":"p4","type":"vmess","server":"fr3.musktrump.top","port":80,"cipher":"auto","uuid":"2b6813ab-12c6-304e-9d55-640f7c6070c9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"fr3.musktrump.top","network":"ws","ws-opts":{"path":"/fr333gogofa","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
-  - {"name":"p5","type":"vmess","server":"fr1a-20260812xxx.85888880.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows11","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
-  - {"name":"p6","type":"vmess","server":"us7a-20260830pag.85888880.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows11","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
+  - {"name":"p5","type":"vmess","server":"us2a-20260812kid.16816806.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows8","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
+  - {"name":"p6","type":"vmess","server":"us4a-20260830ued.16816806.xyz","port":80,"cipher":"auto","uuid":"c97cf46e-1554-36cb-8b36-c3556b883dc4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/windows11","v2ray-http-upgrade":true,"v2ray-http-upgrade-fast-open":true}}
   - {name: hy2-69, server: hinet.huhu.icu, port: 16000, ports: 10000-20000, mport: 10000-20000, udp: true, skip-cert-verify: true, sni: 123.1234567890spcloud.com, type: hysteria2, password: dafdd572-01be-417a-8b0d-ca605817b615 }
 
 proxy-groups:
@@ -43,7 +43,6 @@ proxy-groups:
     disable-udp: true
     proxies:
       - jump
-      - uk01
       - hy1d
       - p4
       - p5
